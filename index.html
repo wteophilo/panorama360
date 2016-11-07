@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Viewer Panorama 360</title>
+	  <meta name="viewport" content="initial-scale=1.0" />
+	  <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/jumbotron.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/btFile.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+       </div>
+       <div id="navbar" class="navbar-collapse collapse">
+         <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="item-menu">
+              <form method="get">
+                  <span class="btn btn-primary btn-file">
+                    Localizar <input type="file" name="pano" id="pano" />
+                  </span>
+               </form>
+             </a>
+            </li>
+         </ul>
+       </div><!--/.navbar-collapse -->
+     </div>
+   </nav>
+
+    <div class="painel360">
+      <p style="text-align: center;">
+	        <a href="#" id="go"></a>
+      </p>
+
+      <div id="your-pano" class="container"></div>
+    </div>
+
+
+	<script type="text/javascript" src="./lib/three.min.js"></script>
+	<script type="text/javascript" src="./lib/photo-sphere-viewer.min.js"></script>
+	<script type="text/javascript" src="./lib/upload.js"></script>
+	<script type="text/javascript" src="./lib/renderer.js"></script>
+	<script>window.$ = window.jQuery = require('./lib/jquery.min.js');</script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+
+
+</html>

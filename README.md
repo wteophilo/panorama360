@@ -1,4 +1,4 @@
 #Image viewer 360
 ==========================
-* Front: Bootstrap
+* Front: Bootstrap + electon
 * Threejs

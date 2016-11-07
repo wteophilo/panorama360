@@ -1,0 +1,15 @@
+body {
+  padding-top: 60px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,sans-serif;
+  color: #5a5a5a;
+}
+
+.jumbotron {
+  text-align: center;
+  padding-top: 220px;
+  padding-bottom:290px;
+}
+
+.painel360{
+  padding-top: 25px;
+}
