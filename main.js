@@ -1,3 +1,4 @@
+"use strict";
 const electron = require('electron')
 // Module to control application life.
 const app = electron.app
@@ -13,7 +14,7 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1200, height: 800})
+	mainWindow = new BrowserWindow({width: 1200, height: 800,resizable: false})
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
@@ -23,7 +24,7 @@ function createWindow () {
   }))
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
